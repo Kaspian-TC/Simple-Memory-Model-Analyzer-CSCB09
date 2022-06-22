@@ -4,6 +4,10 @@ by: Kaspian Thoft-Christensen
 How to compile code:
 gcc assignnment2.c
 
+Purpose: The purpose of this assignment was to create a program which analysed a C file and then printed out which section of memory each variable was assigned to. There are some C files included in the folder called "Example C files" to test with. This program assumes the code is formatted for a regular C file, and will still accept C files with errors, however there is no guarentee it will run properly in that situation.
+
+
+
 How the problem was solved:
 	The code takes in path to a file. If the file is invalid then it prints a statement and exits. It looks a the file one line at a time. Each line is then prepared so it can be tokenized. Then looks at each string in the prepared line, separated by a space, to determine if there are any patterns which match valid function and variable declarations. If it finds a variable, it assigns a node its name, which function it is in, its location in memory, its type, the line number it is on, and its size in memory. Then that variable node gets put into a linked list of all the previously assigned variables. If it finds a function, it assigns a node its name, the number of lines it takes up, and its size in memory. Then that function node gets put into a linked list of all the previous functions. If there is a string literal, then it is assigned to ROData. If there is an allocated variable, then it is added as a new variable to the heap. After is it finished reading through the file, it prints the information gathered in the linked lists out according to the assignment 2 rubric.
 	
