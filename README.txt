@@ -3,7 +3,7 @@ by: Kaspian Thoft-Christensen
 
 Compile code using Makefile on Linux ONLY. Program should also work on macOS but this has not been tested.
 
-Purpose: The purpose of this assignment was to create a program which analysed a C file and then printed out which section of memory each variable was assigned to. There are some C files included in the folder called "testingfiles" to test with. This program assumes the code is formatted for a regular C file, and will still accept C files with errors, however there is no guarentee it will run properly in that situation. 
+Purpose: The purpose of this assignment was to create a program which analysed a C file and then printed out which section of memory each variable was assigned to. There are some C files included in the folder called "testingfiles" to test with. This program assumes the code is formatted for a regular C file, and will still accept C files with errors, however there is no guarantee it will run properly in that situation. 
 
 
 
